@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+}
+
+$ease: .3s ease-in-out;
+$blue: #2791d4;
+
+body, html {
+  padding: 0;
+  margin: 0;
+  font-family: 'Slabo 27px', serif;
+}
+
+h1, h2, ul, li {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 1vw;
+}
+
+h1 {
+  font-size: 4rem;
+  line-height: 4rem;
+}
+
+h2 {
+  font-size: 2.25rem;
+}
+
+p {
+  font-size: 1.25rem;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #000;
+  transition: $ease;
+
+  &:hover {
+    color: $blue;
+  }
+}
+
+li {
+  list-style: none;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.border {
+  border: .5rem solid #000;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.section-padding {
+  padding: 4rem;
+}
+
+.test {
+  height: 20rem;
+}
+
+// Nav
+#side-nav {
+  width: 18%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  padding: 4rem 2rem;
+
+  .border {
+    padding-left: 1rem;
+  }
+
+  .logo {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  ul {
+    margin-top: 3rem;
+  }
+
+  .selected {
+    a {
+      color: $blue;
+    }
+  }
+
+  .bottom-area {
+    position: absolute;
+    bottom: 1rem;
+    left: 2rem;
+    right: 2rem;
+
+    i {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      font-size: 2rem;
+      margin-top: 1rem;
+    }
+  }
+
+  a {
+    margin-bottom: .75rem;
+  }
+}
+
+#banner {
+  background: url('../img/plant-2577864_1280.jpg') no-repeat left center / cover;
+  height: 100vh;
+  text-align: center;
+  position: relative;
+}
+
+// Main Container
+#container {
+  position: absolute;
+  right: 0;
+  width: 82%;
+  overflow: hidden;
+}
+
+#about {
+  p {
+    padding: 1rem 6rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  html { font-size: 1.5vw; }
+}
+
+@media (max-width: 600px) {
+  html { font-size: 2.25vw; }
+}
