@@ -11,7 +11,7 @@ body, html {
   font-family: 'Slabo 27px', serif;
 }
 
-h1, h2, ul, li {
+h1, h2, h3, h4, h5, ul, li {
   padding: 0;
   margin: 0;
 }
@@ -27,6 +27,18 @@ h1 {
 
 h2 {
   font-size: 2.25rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.75rem;
+}
+
+h5 {
+  font-size: 1.25rem;
 }
 
 p {
@@ -49,6 +61,11 @@ li {
   list-style: none;
 }
 
+hr {
+  opacity: .5;
+  width: 70%;
+}
+
 .center {
   position: absolute;
   top: 50%;
@@ -64,12 +81,86 @@ li {
   text-align: center;
 }
 
+.btn {
+  padding: .5rem 1.5rem;
+  border: 1px solid #000;
+  transition: $ease;
+
+  &:hover {
+    border-color: $blue;
+  }
+}
+
+.cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .section-padding {
-  padding: 4rem;
+  padding: 2rem 4rem;
+  margin: 4rem 0;
 }
 
 .test {
   height: 20rem;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.product-container {
+  margin: 2rem 4rem;
+}
+
+.product {
+  margin: 1rem 0;
+  padding-bottom: 1rem;
+  position: relative;
+  transition: $ease;
+
+  .image-container {
+    position: relative;
+    width: 32rem;
+    height: 20rem;
+    overflow: hidden;
+    margin-bottom: .5rem
+  }
+
+  img {
+    max-width: 100%;
+    transition: $ease;
+  }
+
+  &:hover {
+    //background: #efefef;
+    border-radius: 5px;
+
+    img {
+      transform: scale(1.05);
+    }
+  }
+}
+
+.product-round {
+  width: 14rem;
+  height: 14rem;
+  margin: 2rem 0;
+  border: .5rem solid #000;
+  border-radius: 50%;
+  position: relative;
+  transition: $ease;
+
+  &:hover {
+    color: $blue;
+    border-color: $blue;
+  }
 }
 
 // Nav
@@ -80,6 +171,7 @@ li {
   left: 0;
   height: 100%;
   padding: 4rem 2rem;
+  border-right: 1px solid rgba(0,0,0,.05);
 
   .border {
     padding-left: 1rem;
@@ -129,16 +221,70 @@ li {
 }
 
 // Main Container
-#container {
-  position: absolute;
+.tooltip {
+  position: fixed;
+  bottom: 0;
+  left: 17.9%;
   right: 0;
+  z-index: 101;
+  background: #fff;
+  text-align: center;
+  transition: $ease;
+}
+
+#container,
+#footer {
+  position: relative;
+  left: 18%;
   width: 82%;
-  overflow: hidden;
 }
 
 #about {
   p {
     padding: 1rem 6rem;
+  }
+}
+
+#photo {
+  h3 {
+    margin-bottom: 1rem;
+  }
+}
+
+#footer {
+  height: 24rem;
+  padding-top: 8rem;
+
+  .legal-nonsense {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-top: 1px solid rgba(0,0,0,.1);
+    padding: 1rem 4rem;
+    text-align: right;
+  }
+
+  label {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+  }
+
+  input {
+    width: 36rem;
+    font-size: 1.5rem;
+    padding: .5rem 1rem;
+    height: 3rem;
+    vertical-align: top;
+  }
+
+  button {
+    border: 1px solid rgba(0,0,0,.2);
+    background: #fff;
+    height: 3rem;
+    margin: 0;
+    vertical-align: top;
   }
 }
 

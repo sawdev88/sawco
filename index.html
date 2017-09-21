@@ -8,7 +8,6 @@
     <script src="https://use.fontawesome.com/0b488e2512.js"></script>
     <link rel="stylesheet" href="./styles/main.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="./js/main.js" charset="utf-8"></script>
   </head>
   <body>
     <nav id="side-nav">
@@ -17,22 +16,27 @@
       </div>
 
       <ul>
-        <li><a href="#about">about</a></li>
-        <li><a href="#leather">leather</a></li>
-        <li><a href="#faux">faux</a></li>
-        <li><a href="#candle">candle</a></li>
-        <li><a href="#clothing">clothing</a></li>
-        <li><a href="#photo">photo</a></li>
+        <li class="about-nav"><a href="#about">about</a></li>
+        <li class="commuter-nav"><a href="#commuter-series">commuter series</a></li>
+        <li class="home-nav"><a href="#home-series">home series</a></li>
+        <!-- <li><a href="#clothing">clothing</a></li> -->
+        <li class="photo-nav"><a href="#photo">photo</a></li>
+        <li class="blog-nav"><a href="#blog">blog</a></li>
       </ul>
 
       <div class="bottom-area">
-        est. 2017
-
+        <span>killin it since 2017</span>
         <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
       </div>
     </nav>
 
     <main id="container">
+      <div class="tooltip">
+        <p>
+          sawco is still in its early stages and all the support is greatly appreciated. new skills and items are always in the works. check back often and head above water.
+        </p>
+      </div>
+
       <section id="banner">
         <div class="center">
           <h1>sawco.</h1>
@@ -41,25 +45,167 @@
         </div>
       </section>
 
-      <section id="about" class="test section-padding center-text">
-        <h2>motorcycles &#183; bicycles &#183; beer &#183; coffee</h2>
+      <section id="about" class="section-padding center-text">
+        <h2>motorcycles &#183; bicycles &#183; beer &#183; coffee &#183; music</h2>
         <p>
-          sawco. is a passion project created to deliver top notch afforable goods to rad people. Inspired by things things that keep us exploring and take us out of our comfort zone. sawco is designed to be simple, modern and always handmade. Simple is more.
+          sawco. is a passion project created to deliver top notch afforable goods to rad people. Inspired by things things that keep us exploring and take us out of our comfort zone. sawco is designed to be simple, modern and always handmade. somestimes, simple is more.
         </p>
-        <h3>proudly made in san diego, ca</h3>
+        <h5>proudly made in san diego, ca</h5>
       </section>
 
-      <section id="leather" class="test">
-        test
+      <hr>
+
+      <section id="commuter-series" class="section-padding center-text">
+        <h2>&#183; commuter series &#183;</h2>
+        <p>
+          designed with budget in mind. the commuter series is simple, to the point and badass.
+        </p>
+
+        <div class="product-container">
+          <div class="flex-row">
+            <div class="product">
+              <div class="image-container">
+                <img src="./img/placeholder.jpg" alt="placeholder">
+              </div>
+              <h4>title</h4>
+              <span>$19.99</span>
+              <a class="cover" href="#"></a>
+            </div>
+            <div class="product">
+              <div class="image-container">
+                <img src="./img/placeholder.jpg" alt="placeholder">
+              </div>
+              <h4>title</h4>
+              <span>$19.99</span>
+              <a class="cover" href="#"></a>
+            </div>
+          </div>
+          <div class="flex-row">
+            <div class="product">
+              <div class="image-container">
+                <img src="./img/placeholder.jpg" alt="placeholder">
+              </div>
+              <h4>title</h4>
+              <span>$19.99</span>
+              <a class="cover" href="#"></a>
+            </div>
+            <div class="product">
+              <div class="image-container">
+                <img src="./img/placeholder.jpg" alt="placeholder">
+              </div>
+              <h4>title</h4>
+              <span>$19.99</span>
+              <a class="cover" href="#"></a>
+            </div>
+          </div>
+        </div>
+        <a class="btn" href="#">view series</a>
       </section>
 
-      <section id="faux" class="test">
-        test
+      <hr>
+
+      <section id="home-series" class="section-padding center-text">
+        <h2>&#183; home series &#183;</h2>
+        <p>
+          cool stuff for cool people.
+        </p>
+
+        <div class="product-container">
+          <div class="flex-row">
+            <div class="product-round">
+              <div class="center">
+                <h5>test something</h5>
+                <h5>&</h5>
+                <h5>something</h5>
+                <span>16.99</span>
+              </div>
+              <a class="cover" href="#"></a>
+            </div>
+            <div class="product-round">
+              <div class="center">
+                <h5>test something</h5>
+                <h5>&</h5>
+                <h5>something</h5>
+                <span>16.99</span>
+              </div>
+              <a class="cover" href="#"></a>
+            </div>
+            <div class="product-round">
+              <div class="center">
+                <h5>test something</h5>
+                <h5>&</h5>
+                <h5>something</h5>
+                <span>16.99</span>
+              </div>
+              <a class="cover" href="#"></a>
+            </div>
+            <div class="product-round">
+              <div class="center">
+                <h5>test something</h5>
+                <h5>&</h5>
+                <h5>something</h5>
+                <span>16.99</span>
+              </div>
+              <a class="cover" href="#"></a>
+            </div>
+          </div>
+        </div>
+        <a class="btn" href="#">view series</a>
       </section>
 
-      <section id="candle" class="test">
-        test
+      <hr>
+
+      <section id="photo" class="section-padding center-text">
+        <h2>&#183; photo &#183;</h2>
+        <p>
+          life & times.
+        </p>
+
+        <div class="product-container">
+          <div class="flex-row">
+            <div class="product">
+              <h3>title</h3>
+              <div class="image-container">
+                <img src="./img/placeholder.jpg" alt="placeholder">
+              </div>
+              <span>$19.99</span>
+              <a class="cover" href="#"></a>
+            </div>
+            <div class="product">
+              <h3>title</h3>
+              <div class="image-container">
+                <img src="./img/placeholder.jpg" alt="placeholder">
+              </div>
+              <span>$19.99</span>
+              <a class="cover" href="#"></a>
+            </div>
+          </div>
+        </div>
+        <a class="btn" href="#">view collection</a>
       </section>
+
+      <hr>
+
+      <section id="blog" class="section-padding center-text">
+        <h2>&#183; blog &#183;</h2>
+      </section>
+
+      <hr>
     </main>
+
+    <footer id="footer" class="center-text">
+
+      <form class="email" action="index.html" method="post">
+        <label for="email-list">sign up for the email list</label>
+        <br>
+        <input type="email" name="email-list" value="">
+        <button type="submit" name="button">join</button>
+      </form>
+
+      <div class="legal-nonsense">
+        <span>© 2017. all rights reserved.</span>
+      </div>
+      <script src="./js/main.js" charset="utf-8"></script>
+    </footer>
   </body>
 </html>
