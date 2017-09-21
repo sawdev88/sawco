@@ -56,8 +56,14 @@ $(function () {
     $('#side-nav li').removeClass('selected');
   })
 
+  // mobile nav
+  $('.hamburger').on('click', function () {
+    $('#side-nav').toggleClass('show-nav');
+  })
+
   // Hide tooltip
   setTimeout(function () {
     $('.tooltip').css('bottom', '-10rem')
   }, 10000)
+
 })
